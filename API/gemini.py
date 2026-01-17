@@ -2,7 +2,7 @@ from google import genai
 
 # create client
 client = genai.Client(
- api_key="AIzaSyCQnOAqe5BPnSXyrlGGzu36X8_P-ql3p60"
+ api_key=""
 )
 
 # generate text

@@ -7,7 +7,7 @@ import os
 
 
 client = OpenAI(
-    api_key="AIzaSyDDPSr7LHnRc4oVc3z3ciTH1iA6P290ttE",
+    api_key="",
     base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
 )
 # - for every tool wait for the observe step which is the output from the called tool.
