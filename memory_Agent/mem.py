@@ -6,11 +6,16 @@ from dotenv import load_dotenv
 from pathlib import Path
 
 # Load environment variables
-env_path = Path(__file__).resolve().parent.parent / ".env"
+env_path = Path(__file__).resolve().parent / ".env"
 load_dotenv(env_path)
 
 GEMINI_API_KEY = os.getenv("GOOGLE_GEMINI_API")
 assert GEMINI_API_KEY, "GOOGLE_GEMINI_API not loaded"
+
+
+NEO4J_USERNAME = os.getenv("NEO4J_USERNAME")
+NEO4J_PASSWORD = os.getenv("NEO4J_PASSWORD")
+assert NEO4J_PASSWORD, "NEO4J_PASSWORD Not Loaded"
 
 # Initialize the Native Gemini Client
 client = genai.Client(api_key=GEMINI_API_KEY)
@@ -33,6 +38,14 @@ config = {
             "api_key": os.environ["GOOGLE_GEMINI_API"]
             # REMOVED: task_type and output_dimensionality
         }
+    },
+    "graph_store":{
+        "provider": "neo4j",
+        "config": {
+            "url":"neo4j+s://c25904f1.databases.neo4j.io",
+            "username":NEO4J_USERNAME,
+            "password":NEO4J_PASSWORD,      
+        }          
     },
     "vector_store": {
         "provider": "qdrant",
@@ -61,7 +74,7 @@ print(f"AI: {ai_response}")
 
 # Save to Mem0
 memory_client.add(
-    user_id="1234",
+    user_id="tps",
     messages=[
         {"role": "user", "content": user_query},
         {"role": "assistant", "content": ai_response}

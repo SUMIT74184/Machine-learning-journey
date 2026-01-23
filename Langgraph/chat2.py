@@ -76,14 +76,3 @@ updated_state=graph.invoke(State({"user_query":"Hey, what is the capital of Naga
 
 print(updated_state)
 
-
-
-
-
-
-
-
-
-
-
-
