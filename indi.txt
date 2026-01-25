@@ -6,3 +6,10 @@ this is for the slave branch
 Merged with main 
 
 Now the official work on the main branch ...im unaware of whats going inside the slave branch
+
+
+# I would love to add the model training using the pytorch code
+# with the accuracy of more 95% 
+
+
+nice start of 2026 
