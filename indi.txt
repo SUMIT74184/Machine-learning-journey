@@ -25,7 +25,12 @@ worked and fixed the bug
 bugfix
 
 REBASE COMMAND
+<<<<<<< HEAD
 This is the rebase commands which is used to worked
 bugfix card added completely
+=======
+This is the rebase commands which is used to wor
+add the bugfix on main
+>>>>>>> 0ab0332 (added on main bugfix)
 
 
