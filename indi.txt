@@ -18,3 +18,8 @@ nice start of jan 2026
 Trying to fix this branch using the git stash
 
 worked and fixed the bug 
+
+
+
+REBASE COMMAND
+This is the rebase commands which is used to wor
