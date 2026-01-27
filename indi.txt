@@ -21,5 +21,8 @@ worked and fixed the bug
 
 
 
+
+bugfix
+
 REBASE COMMAND
 This is the rebase commands which is used to wor
