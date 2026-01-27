@@ -13,3 +13,8 @@ Now the official work on the main branch ...im unaware of whats going inside the
 
 
 nice start of jan 2026
+
+
+Trying to fix this branch using the git stash
+
+worked and fixed the bug 
